@@ -11,10 +11,32 @@ export const experiences = defineType({
             type:'string'
         }),
         defineField({
-            name:'works',
-            title:'Works',
-            type:'array',
-            of:[{ type:'workExperience'}]
+            name: 'role',
+            title: 'Role',
+            type: 'string'
+        }),
+    	defineField({
+            name: 'company',
+            title: 'Company',
+            type: 'string',
+        }),
+        defineField({
+            name: 'desc1',
+            title: 'Desc1',
+            type:'text',
+            rows: 3,
+        }),
+        defineField({
+            name: 'desc2',
+            title: 'Desc2',
+            type:'text',
+            rows: 3,
+        }),
+        defineField({
+            name: 'desc3',
+            title: 'Desc3',
+            type:'text',
+            rows: 3,
         }),
     ]
 })
